@@ -1480,3 +1480,27 @@ body {
     left: 0;
   }
 }
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .grid-item {
+    flex: 1;
+    max-width: 25%;
+  }
+}
